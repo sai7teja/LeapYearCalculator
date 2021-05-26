@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+  <body>
+
+
+    <h1 id="nameId">Hello !</h1>
+
+    <button onclick="change_text()">Click me</button>
+
+    <p>When you click above button it will change the text </p>
+    <form>
+      Name: <input type="text" name="name" id="user_input"><br>
+
+    </form>
+    <p>Click on the below button to check whether the given year is leap year or not </p>
+    Check leap year<input class="year" type="text" />
+    <button class="Btn">CHECK</button>
+    <div class="result"></div>
+    <script>
+      let resultEle = document.querySelector(".result");
+      let yearEle = document.querySelector(".year");
+      document.querySelector(".Btn").addEventListener("click", () => {
+        if (yearEle.value % 4 == 0) {
+          resultEle.innerHTML = yearEle.value + " is a leap year ";
+        } else resultEle.innerHTML = yearEle.value + " is not a leap year";
+      });
+
+    </script>
+    <input type="submit" onclick="showInput();"><br />
+    <label>Page Submited by </label>
+    <p><span id='display'></span></p>
+
+  </body>
+
+</html>
+<h2>
+  Page updated by
+  -----------KANIKE SAI TEJA ----------------
+</h2>
